@@ -5,35 +5,36 @@ header {
   background: #eee;
   display: flex;
   justify-content: center;
+  align-content: center;
   flex-wrap: wrap; }
-  /* line 12, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
+  /* line 13, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
   header h1 {
     display: block;
     margin: auto; }
-  /* line 18, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
+  /* line 19, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
   header nav {
     display: block;
     margin: auto; }
-    /* line 22, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
+    /* line 23, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
     header nav ul {
       display: flex;
       align-items: flex-start;
       flex-wrap: wrap; }
-      /* line 27, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
+      /* line 28, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
       header nav ul li {
         display: block;
         border: 0;
         border-left: 1px solid; }
-        /* line 32, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
+        /* line 33, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
         header nav ul li:first-child {
           border-left: 0 none; }
-        /* line 36, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
+        /* line 37, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
         header nav ul li a {
           display: block;
-          padding: 10px 20px;
+          padding: 10px 10px;
           text-decoration: none;
           color: black; }
-          /* line 43, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
+          /* line 44, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
           header nav ul li a:hover {
             background: #ccc; }
 
