@@ -1,0 +1,137 @@
+/* line 1, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
+header {
+  border-bottom: 1px solid;
+  padding: 10px;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  /* line 12, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
+  header h1 {
+    display: block;
+    margin: auto; }
+  /* line 18, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
+  header nav {
+    display: block;
+    margin: auto; }
+    /* line 22, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
+    header nav ul {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap; }
+      /* line 27, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
+      header nav ul li {
+        display: block;
+        border: 0;
+        border-left: 1px solid; }
+        /* line 32, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
+        header nav ul li:first-child {
+          border-left: 0 none; }
+        /* line 36, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
+        header nav ul li a {
+          display: block;
+          padding: 10px 20px;
+          text-decoration: none;
+          color: black; }
+          /* line 43, /Users/dperny/programming/web/dperny.net/source/stylesheets/_header.scss */
+          header nav ul li a:hover {
+            background: #ccc; }
+
+/* line 1, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 10px; }
+  /* line 6, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+  main h2 {
+    padding: 10px; }
+  /* line 10, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+  main section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+    /* line 16, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+    main section figure {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      justify-content: center;
+      padding: 10px; }
+      /* line 24, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+      main section figure img {
+        max-width: 300px;
+        max-height: 300px;
+        width: auto;
+        height: auto; }
+    /* line 32, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+    main section .desc {
+      padding: 10px;
+      min-width: 300px;
+      flex: 2; }
+
+/* BEST RULE EVER. TRULY I HAVE FOUND LIFE ANEW */
+/* line 6, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 10, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+body {
+  font-family: 'Lekton', Helvetica, Arial, sans-serif; }
+
+/* All headers alwasy Molengo */
+/* line 15, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Molengo', Georgia, Times, serif; }
+
+/* container object for the card */
+/* line 20, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+.card {
+  max-width: 1024px;
+  margin: 0 auto; }
+
+/* my personal photo */
+/* line 26, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+img.me {
+  float: left;
+  width: 150px;
+  margin: 10px; }
+
+/* line 32, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+article {
+  max-width: 1024px;
+  margin: 0 auto; }
+
+/* line 37, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+.bio h2 {
+  padding: 10px; }
+
+/* main information box */
+/* line 43, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+.info {
+  font-family: 'Lekton', Helvetica, Arial, sans-serif;
+  float: right;
+  width: 67%;
+  padding: 0 10px; }
+
+/* line 50, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+.name {
+  font-size: 32px; }
+
+@media screen and (max-width: 720px) {
+  /* line 55, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+  .headshot {
+    width: 100%;
+    margin: 20px auto; } }
+@media screen and (max-width: 720px) {
+  /* line 61, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+  .info {
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+    text-align: center; } }
+@media screen and (max-width: 720px) {
+  /* line 70, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+  .card {
+    max-width: 480px;
+    margin: 0 auto; } }
