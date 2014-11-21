@@ -38,101 +38,144 @@ header {
           header nav ul li a:hover {
             background: #ccc; }
 
-/* line 1, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
-main {
+/* line 4, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+main h2 {
   max-width: 1024px;
   margin: 0 auto;
   padding: 10px; }
-  /* line 6, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
-  main h2 {
+/* line 9, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+main section {
+  max-width: 1024px;
+  margin: 0 auto; }
+/* line 13, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+main section.with-fig {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+  /* line 19, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+  main section.with-fig figure {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
     padding: 10px; }
-  /* line 10, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
-  main section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap; }
-    /* line 16, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
-    main section figure {
-      flex: 1;
-      min-width: 300px;
+    /* line 26, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+    main section.with-fig figure img {
+      max-width: 300px;
+      max-height: 300px;
+      width: auto;
+      height: auto; }
+  /* line 34, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+  main section.with-fig .desc {
+    padding: 10px;
+    min-width: 300px;
+    flex: 2; }
+/* line 41, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+main .reverse {
+  flex-direction: row-reverse; }
+/* line 46, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+main article.stripe > div {
+  padding: 100px 0 100px 0; }
+  /* line 49, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+  main article.stripe > div:first-child {
+    padding: 0 0 100px 0; }
+  /* line 54, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+  main article.stripe > div:nth-child(odd) {
+    background: #fff; }
+  /* line 58, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+  main article.stripe > div:nth-child(even) {
+    background: #eee; }
+
+/* line 1, /Users/dperny/programming/web/dperny.net/source/stylesheets/_footer.scss */
+footer {
+  background: #000;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px; }
+  /* line 9, /Users/dperny/programming/web/dperny.net/source/stylesheets/_footer.scss */
+  footer .forkme {
+    color: #fff; }
+    /* line 11, /Users/dperny/programming/web/dperny.net/source/stylesheets/_footer.scss */
+    footer .forkme a {
+      color: inherit;
       display: flex;
       justify-content: center;
-      padding: 10px; }
-      /* line 24, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
-      main section figure img {
-        max-width: 300px;
-        max-height: 300px;
-        width: auto;
-        height: auto; }
-    /* line 32, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
-    main section .desc {
-      padding: 10px;
-      min-width: 300px;
-      flex: 2; }
+      align-items: center; }
+      /* line 12, /Users/dperny/programming/web/dperny.net/source/stylesheets/_footer.scss */
+      footer .forkme a img {
+        margin: 0 5px; }
 
 /* BEST RULE EVER. TRULY I HAVE FOUND LIFE ANEW */
-/* line 6, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+/* line 8, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
 * {
   box-sizing: border-box; }
 
-/* line 10, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+/* line 12, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
 body {
-  font-family: 'Lekton', Helvetica, Arial, sans-serif; }
+  font-family: 'Lekton', Helvetica, Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+/* line 19, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+main {
+  padding: 0;
+  flex: 1; }
 
 /* All headers alwasy Molengo */
-/* line 15, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+/* line 25, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Molengo', Georgia, Times, serif; }
 
 /* container object for the card */
-/* line 20, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+/* line 30, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
 .card {
   max-width: 1024px;
   margin: 0 auto; }
 
 /* my personal photo */
-/* line 26, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+/* line 36, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
 img.me {
   float: left;
   width: 150px;
   margin: 10px; }
 
-/* line 32, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+/*
 article {
-  max-width: 1024px;
-  margin: 0 auto; }
-
-/* line 37, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+  @include constrain(1024px);
+}
+*/
+/* line 49, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
 .bio h2 {
   padding: 10px; }
 
 /* main information box */
-/* line 43, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+/* line 55, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
 .info {
   font-family: 'Lekton', Helvetica, Arial, sans-serif;
   float: right;
   width: 67%;
   padding: 0 10px; }
 
-/* line 50, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+/* line 62, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
 .name {
   font-size: 32px; }
 
 @media screen and (max-width: 720px) {
-  /* line 55, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+  /* line 67, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
   .headshot {
     width: 100%;
     margin: 20px auto; } }
 @media screen and (max-width: 720px) {
-  /* line 61, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+  /* line 73, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
   .info {
     width: 100%;
     margin: 0 auto;
     float: left;
     text-align: center; } }
 @media screen and (max-width: 720px) {
-  /* line 70, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
+  /* line 82, /Users/dperny/programming/web/dperny.net/source/stylesheets/all.scss */
   .card {
     max-width: 480px;
     margin: 0 auto; } }
