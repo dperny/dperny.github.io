@@ -46,43 +46,44 @@ main h2 {
 /* line 9, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
 main section {
   max-width: 1024px;
-  margin: 0 auto; }
-/* line 13, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+  margin: 0 auto;
+  padding: 0 10px; }
+/* line 14, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
 main section.with-fig {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap; }
-  /* line 19, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+  /* line 20, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
   main section.with-fig figure {
     flex: 1;
     min-width: 300px;
     text-align: center;
     padding: 10px; }
-    /* line 26, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+    /* line 27, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
     main section.with-fig figure img {
       max-width: 300px;
       max-height: 300px;
       width: auto;
       height: auto; }
-  /* line 34, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+  /* line 35, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
   main section.with-fig .desc {
     padding: 10px;
     min-width: 300px;
     flex: 2; }
-/* line 41, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+/* line 42, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
 main .reverse {
   flex-direction: row-reverse; }
-/* line 46, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+/* line 47, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
 main article.stripe > div {
   padding: 100px 0 100px 0; }
-  /* line 49, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+  /* line 50, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
   main article.stripe > div:first-child {
     padding: 0 0 100px 0; }
-  /* line 54, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+  /* line 55, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
   main article.stripe > div:nth-child(odd) {
     background: #fff; }
-  /* line 58, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
+  /* line 59, /Users/dperny/programming/web/dperny.net/source/stylesheets/_main.scss */
   main article.stripe > div:nth-child(even) {
     background: #eee; }
 
