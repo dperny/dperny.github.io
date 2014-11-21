@@ -64,7 +64,7 @@ audio:not([controls]) {
 html {
     font-family: sans-serif; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
-    -ms-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100% /* 2 */
 }
 
 /*
@@ -255,7 +255,7 @@ fieldset {
 
 legend {
     border: 0; /* 1 */
-    padding: 0; /* 2 */
+    padding: 0 /* 2 */
 }
 
 /*
@@ -270,7 +270,7 @@ select,
 textarea {
     font-family: inherit; /* 1 */
     font-size: 100%; /* 2 */
-    margin: 0; /* 3 */
+    margin: 0 /* 3 */
 }
 
 /*
@@ -296,7 +296,7 @@ html input[type="button"], /* 1 */
 input[type="reset"],
 input[type="submit"] {
     -webkit-appearance: button; /* 2 */
-    cursor: pointer; /* 3 */
+    cursor: pointer /* 3 */
 }
 
 /*
@@ -316,7 +316,7 @@ input[disabled] {
 input[type="checkbox"],
 input[type="radio"] {
     box-sizing: border-box; /* 1 */
-    padding: 0; /* 2 */
+    padding: 0 /* 2 */
 }
 
 /*
@@ -326,9 +326,7 @@ input[type="radio"] {
  */
 
 input[type="search"] {
-    -webkit-appearance: textfield; /* 1 */
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box; /* 2 */
+    -webkit-appearance: textfield; /* 1 */ /* 2 */
     box-sizing: content-box;
 }
 
@@ -359,7 +357,7 @@ input::-moz-focus-inner {
 
 textarea {
     overflow: auto; /* 1 */
-    vertical-align: top; /* 2 */
+    vertical-align: top /* 2 */
 }
 
 /* ==========================================================================
