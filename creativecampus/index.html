@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<style>
+  div {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  
+  .fancy {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .constrain {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<!--<script type="text/javascript" src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>-->
+
+<script>
+$(document).ready(function() {
+
+  var slides = $(".slide");
+  var current = 0;
+  console.log(slides);
+
+  function nextSlide(num) {
+    return (num + 1) % slides.length;
+  }
+
+
+  $(document).click(function() {
+    // console.log(slides[current]);
+    $(slides[current]).hide("slide");
+    current = nextSlide(current);
+    $(slides[current]).show("drop");
+  });
+
+  var tog = false;
+  setInterval(function() {
+    if(tog) {
+      $(".rewrite").text("over");
+    } else {
+      $(".rewrite").text("and");
+    }
+    tog = !tog;
+  }, 500);
+});
+</script>
+
+</head>
+<body>
+<!-- page one -->
+<div class="slide" id="0">
+  <div class="container">
+    <h1>Web development is a process.</h1>
+    <h2>Click anywhere to see it</h2>
+  </div>
+</div>
+
+<div class="slide" id="1" style="display: none;">
+  <div class="container">
+    <h1>Web development is a process.</h1>
+    <h2>Click anywhere to see it</h2>
+    <p>It starts really, really simple. The content is the most important element.
+    Everything else is an embellishment.</p>
+  </div>
+</div>
+
+<div class="slide" id="2" style="display: none;">
+  <div class="container fancy">
+    <h1>Web development is a process.</h1>
+    <h2>Click anywhere to see it</h2>
+    <p>It starts really, really simple. The content is the most important element.
+    Everything else is an embellishment.</p>
+    <p>But I think everyone can agree that some embellishment is good.</p>
+  </div>
+</div>
+
+<div class="slide" id="3" style="display: none;">
+  <div class="container fancy constrain">
+    <h1>Web development is a process.</h1>
+    <h2>Click anywhere to see it</h2>
+    <p>It starts really, really simple. The content is the most important element.
+    Everything else is an embellishment.</p>
+    <p>But I think everyone can agree that some embellishment is good.</p>
+    <p>Styling come together, little by little. It serves to enhance the content,
+    never to distract from it.</p>
+  </div>
+</div>
+
+<div class="slide" id="4" style="display: none;">
+  <div class="container fancy constrain">
+    <h1>Web development is a process.</h1>
+    <h2>Click anywhere to see it</h2>
+    <p>It starts really, really simple. The content is the most important element.
+    Everything else is an embellishment.</p>
+    <p>But I think everyone can agree that some embellishment is good.</p>
+    <p>Styling come together, little by little. It serves to enhance the content,
+    never to distract from it.</p>
+    <p>There's so much more than this. The web gives us content that rewrites
+    itself <span class="rewrite" style="font-size: large;"></span> again.</p>
+  </div>
+</div>
+<div class="slide" id="4" style="display: none;">
+  <div class="container fancy constrain">
+    <h1>Web development is a process.</h1>
+    <h2>Click anywhere to see it</h2>
+    <p>It starts really, really simple. The content is the most important element.
+    Everything else is an embellishment.</p>
+    <p>But I think everyone can agree that some embellishment is good.</p>
+    <p>Styling come together, little by little. It serves to enhance the content,
+    never to distract from it.</p>
+    <p>There's so much more than this. The web gives us content that rewrites
+    itself <span class="rewrite" style="font-size: larger;"></span> again.</p>
+    <p>I threw this demo together in an hour, and this is just the very
+    beginning. Imagine what I could do for you in a year?</p>
+  </div>
+</div>
+</body>
