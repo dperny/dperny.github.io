@@ -3,6 +3,7 @@
 <head>
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 <style>
+
   div {
     width: 100%;
     height: 100%;
@@ -17,9 +18,10 @@
     max-width: 1024px;
     margin: 0 auto;
   }
+
 </style>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-<!--<script type="text/javascript" src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>-->
+<script type="text/javascript" src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
 
 <script>
 $(document).ready(function() {
@@ -35,9 +37,9 @@ $(document).ready(function() {
 
   $(document).click(function() {
     // console.log(slides[current]);
-    $(slides[current]).hide("slide");
+    $(slides[current]).hide("slide", {direction: "left"});
     current = nextSlide(current);
-    $(slides[current]).show("drop");
+    $(slides[current]).show("slide", {direction: "right"});
   });
 
   var tog = false;
@@ -106,7 +108,7 @@ $(document).ready(function() {
     itself <span class="rewrite" style="font-size: large;"></span> again.</p>
   </div>
 </div>
-<div class="slide" id="4" style="display: none;">
+<div class="slide" id="5" style="display: none;">
   <div class="container fancy constrain">
     <h1>Web development is a process.</h1>
     <h2>Click anywhere to see it</h2>
